@@ -1,0 +1,48 @@
+body{
+    min-height: 100%;
+    background-image: url("img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: brown;
+}
+
+h2,p{
+    text-align: center;
+}
+
+
+form { 
+    margin: 0 auto; 
+    width:700px;
+}
+
+#addNews{
+    margin-left: 5%;
+    margin-right: 62%;
+    font-size: medium;
+}
+
+#predict{
+    margin-top: 5%;
+    margin-left: 45%;
+    font-size: medium;
+}
+
+#newsbox{
+    margin-left: 3%;
+    margin-top: 10px;
+    font-size: larger;
+    width: 80%;
+}
+table{
+    margin-left: 5%;
+    width: 700px;
+}
+#removeNews{
+    font-size: medium;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stock Market Sentiment Analysis</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+
+<body>  
+    
+    <h1>Predicting stock market</h1>
+    <p>Want to become richer than Warren Buffet?<br>
+        Bet all your life savings on Dow Jones based on the result of this model &#128521 &#128521</p><br><br><br>
+    <p>Enter at least the top five stories from today to forecast Dow Jones movement for tomorrow. </p>
+    <form name="myForm" action="predict" method="POST" >
+        <table>
+            <tr>
+                <input type="button" id="addNews" value="Add News"  />
+                <input type="button" id="removeNews" value="Remove News"  />
+            </tr>
+            
+            <td id="newsCell">
+                <label for="input_text[]">News 1:</label>
+                <input type="text" id="newsbox" name='input_text[]' placeholder="Enter News" required=True/>
+                <br>
+                <label for="input_text[]">News 2:</label>
+                <input type="text" id="newsbox" name='input_text[]' placeholder="Enter News" required=True/>
+                <br>
+                <label for="input_text[]">News 3:</label>
+                <input type="text" id="newsbox" name='input_text[]' placeholder="Enter News" required=True/>
+                <br>
+                <label for="input_text[]">News 4:</label>
+                <input type="text" id="newsbox" name='input_text[]' placeholder="Enter News" required=True/>
+                <br>
+                <label for="input_text[]">News 5:</label>
+                <input type="text" id="newsbox" name='input_text[]' placeholder="Enter News" required=True/>
+                <br>
+            </td>
+        </table>
+
+        <input type="submit" value="Predict" id="predict"/>
+    </form>
+    <br>
+    <h2>{{predict_text}}</h2>
+    
+    <script src="../static/index.js"></script>
+</body>
+</html> 
